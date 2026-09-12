@@ -1,4 +1,4 @@
-🚗 JstoPague - Sistema para Lava-Rápido Autônomo
+🚗 JatoPague - Sistema para Lava-Rápido Autônomo
 
 📖 Sobre o Projeto
 
