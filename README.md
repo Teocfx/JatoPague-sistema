@@ -72,6 +72,6 @@ Isso irá inicializar o servidor Node e abrir a janela da aplicação Desktop (E
 - Teófilo da costa
 
 
-Disciplina: [Nome da Disciplina]
+Disciplina: Inivação e sustentabilidade
 
-Instituição: [Nome da Faculdade/Universidade]
+Instituição: Faculdade internacional da paraiba
