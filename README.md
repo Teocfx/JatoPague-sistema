@@ -72,6 +72,6 @@ Isso irá inicializar o servidor Node e abrir a janela da aplicação Desktop (E
 - Teófilo da costa
 
 
-Disciplina: Inivação e sustentabilidade
+Disciplina: Inovação e sustentabilidade
 
 Instituição: Faculdade internacional da paraiba
