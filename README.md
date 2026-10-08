@@ -1,77 +1,48 @@
-🚗 JatoPague - Sistema para Lava-Rápido Autônomo
+# JatoPague
 
-📖 Sobre o Projeto
+Painel de operação para lava-rápido self-service. A interface React acompanha os equipamentos, cronometra cada uso e calcula o valor da sessão conforme a tarifa configurada.
 
-Este é um projeto acadêmico desenvolvido para gerenciar um sistema de lava-rápido autônomo (modelo self-service). A aplicação permite que os próprios clientes utilizem os equipamentos de lavagem, contabilizando o tempo exato de uso e calculando o valor final a ser pago de forma automatizada. O objetivo é otimizar o fluxo de clientes e garantir uma cobrança justa e precisa baseada no tempo.
+## Funcionalidades
 
-✨ Funcionalidades Principais
+- Iniciar, pausar, retomar e encerrar sessões de lavagem.
+- Atender clientes pelo totem: selecionar equipamento e serviço, acompanhar a lavagem e conferir o resumo final.
+- Simular pagamento após a lavagem por Pix demonstrativo ou cartão de crédito/débito.
+- Acompanhar o tempo e o valor parcial de cada equipamento em tempo real.
+- Configurar tarifas por serviço; a tarifa fica fixa durante cada sessão iniciada.
+- Consultar o histórico de sessões, duração e valor arrecadado.
+- Manter sessões ativas, tarifas e histórico após recarregar a página.
+- Usar o painel em telas grandes ou em dispositivos móveis.
 
-Controle de Tempo: Cronômetro integrado para medir o tempo exato de uso das máquinas (água, sabão, aspirador, etc.).
+## Tecnologias
 
-Precificação Dinâmica: Cálculo do valor total a pagar com base na tarifa por minuto/hora configurada no sistema.
+JavaScript, React, Vite e Lucide. Os dados são salvos no armazenamento local do navegador (`localStorage`).
 
-Gestão de Sessões: Início, pausa e encerramento das sessões de lavagem.
+## Executar localmente
 
-Histórico de Uso: Registro de todas as lavagens realizadas, incluindo data, duração e valor arrecadado.
+Requer Node.js 18 ou superior.
 
-Interface Desktop: Interface amigável para operação no local através de um terminal/totem.
-
-🛠️ Tecnologias Utilizadas
-
-Linguagem: JavaScript
-
-Frontend / Aplicação Desktop: Electron
-
-Backend: Node.js (para lógica de negócio e integração)
-
-Banco de Dados: SQL (compatível com SQLite, MySQL ou PostgreSQL)
-
-🚀 Como Rodar o Projeto
-
-Pré-requisitos
-
-Antes de começar, você precisará ter instalado em sua máquina:
-
-Node.js (versão 16 ou superior)
-
-Um servidor de banco de dados SQL (caso utilize SQLite, o banco será gerado localmente em um arquivo).
-
-Passo a passo
-
-Clone o repositório:
-
-git clone https://github.com/seu-usuario/seu-repositorio.git
-cd seu-repositorio
-
-
-Instale as dependências:
-
+```bash
 npm install
+npm run dev
+```
 
+Para gerar a versão de produção:
 
-Configuração do Banco de Dados:
+```bash
+npm run build
+npm run preview
+```
 
-Caso não utilize SQLite, crie um banco de dados no seu SGBD preferido.
+O painel atual é uma aplicação web local. A etapa de pagamento é fictícia: o QR do Pix não é pagável e o cartão apenas simula uma confirmação, sem cobrar ou solicitar dados financeiros. O sistema também não integra equipamentos físicos nem um banco de dados remoto; os dados ficam no navegador em que é operado.
 
-Copie o arquivo .env.example para .env e preencha as credenciais de acesso ao banco (se necessário).
+## Autores
 
-Execute o script de criação das tabelas (localizado na pasta /sql ou via migrations).
-
-Inicie a aplicação:
-
-npm start
-
-
-Isso irá inicializar o servidor Node e abrir a janela da aplicação Desktop (Electron).
-
-🎓 Autores
-- Felipe maciel
-- Maiquel brassiani
-- João vitor
+- Felipe Maciel
+- Maiquel Brassiani
+- João Vitor
 - João Pedro Firmo
-- Teófilo da costa
+- Teófilo da Costa
 
+Disciplina: Inovação e Sustentabilidade
 
-Disciplina: Inovação e sustentabilidade
-
-Instituição: Faculdade internacional da paraiba
+Instituição: Faculdade Internacional da Paraíba
